@@ -1432,6 +1432,10 @@ html, body {
   .projects-overlay {
     transition: opacity 0.3s ease;
   }
+  .projects-overlay h3 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  }
 }
 @media (hover: none) and (pointer: coarse) {
   .social-links a:hover {
