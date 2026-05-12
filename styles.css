@@ -1401,9 +1401,19 @@ html, body {
     top: 155px;
     right: 0;
   }
+  .about-content {
+  text-align: center;
+  }
+  .about-content p {
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  padding: 0 8px;
+  }
   .projects-card {
     position: relative;
     overflow: hidden;
+    height: 250px;
   }
   .projects-card:hover {
     transform: none;
