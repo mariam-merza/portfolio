@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariam Merza</title>
+    <link rel="icon" type="image/png" href="/assets/logos/favicon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/CSS" href="/styles.css">
+    <script src="/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+    emailjs.init("VTB73HfGY8npWOEcf");
+</script>
+</head>
+<body>
+    <div id="layout">
+        <nav class="nav-bar" aria-label="Main navigation">
+             <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-overlay" onclick="toggleMenu()"></div>
+
+            <nav class="mobile-menu">
+
+                <ul>
+                    <li class="menu-section">HOME</li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <li class="email">
+                        <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-.5a.5.5 0 0 0-.5.5v.217l6.5 3.9 6.5-3.9V4a.5.5 0 0 0-.5-.5H2zm12.5 1.383-4.708 2.825 4.708 3.925V4.883zm-.034 7.434-5.982-4.985L8 7.583l-.484-.251-5.982 4.985A.5.5 0 0 0 2 12.5h12a.5.5 0 0 0 .466-.183zM1.5 11.633l4.708-3.925L1.5 4.883v6.75z"/>
+                        </svg>
+
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=marymerza4@gmail.com" target="_blank" aria-label="Email">
+                            marymerza4@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav-left">
+                <img src="./assets/logos/butterfly1.png" alt="My logo" class="logo">
+                <span class="logo-text">MM</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header class="hero" id="hero">
+            <div class="hero-content">
+                <h1>
+                    <span class="typewriter">Hi there! I'm Mary</span>
+                </h1>
+                <p>Welcome to my e-portfolio!</p>
+                <a href="assets/resume/Mariam_Merza.pdf" target="_blank" class="btn btn-primary">
+                View CV
+                </a>
+                <a href="#contact" class="btn btn-primary">
+                Hire Me
+                </a>
+            </div>
+        </header>
+
+        <section id="about" class="fade-in">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-visual">
+            <div class="orbit-glow"></div>
+            <div class="planet-ring"></div>
+            <div class="image-ring">
+                <img src="assets/logos/about.png" alt="Profile">
+            </div>
+
+            <img src="assets/logos/butterfly1.png"
+                class="butterfly b1"
+                alt="Butterfly">
+
+            <img src="assets/logos/butterfly1.png"
+                class="butterfly b2"
+                alt="Butterfly">
+
+            <img src="assets/logos/butterfly2.png"
+                class="butterfly b3"
+                alt="Butterfly">
+
+            <img src="assets/logos/butterfly2.png"
+                class="butterfly b4"
+                alt="Butterfly">
+
+            <div class="spark sp1"></div>
+            <div class="spark sp2"></div>
+            <div class="spark sp3"></div>
+            <div class="spark sp4"></div>
+            <div class="spark sp5"></div>
+            <div class="spark sp6"></div>
+            <div class="spark sp7"></div>
+            <div class="spark sp8"></div>
+            <div class="spark sp9"></div>
+            <div class="spark sp10"></div>
+
+        </div>
+
+        <div class="about-content">
+
+            <div class="about-heading">
+                <div class="divider"></div>
+                <p class="quote">“Building solutions through code and data.”</p>
+                <div class="divider2"></div>
+            </div>
+
+            <p>
+            I am a Computer Science graduate with a strong interest in software development, artificial intelligence, machine learning, and data-driven systems. My work focuses on building clean, scalable, and efficient applications that combine strong technical architecture with intuitive user experiences.
+            </p>
+
+            <p>
+            Throughout my academic and personal projects, I have developed experience in frontend development, full-stack web applications, statistical modelling, and data analysis using modern technologies and Python-based ecosystems.
+            </p>
+
+            <p>
+            I enjoy solving complex problems, optimizing systems, and transforming ideas into functional digital products. My portfolio reflects a combination of software engineering, analytical thinking, and modern design principles.
+            </p>
+
+            <p>
+            Technical experience includes HTML, CSS, JavaScript, Python, SQL, machine learning workflows, data visualization, API integration, responsive web design, and research-based technical documentation.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="experience" class="fade-in">
+        <h2 class="section-title">My Experience</h2>
+        <p class="section-subtitle">Here is my work experience, listed in order of most recent. Click a box below to view details.</p>
+        
+        <div class="experience-grid">
+            <div class="experience-card" onclick="this.classList.toggle('active')">
+                <div class="experience-header"><h3>Student Marker</h3><span class="chevron">▼</span></div>
+                <div class="experience-content">
+                    <p>- Marked, graded, calculated and recorded grades of students' work for COIS-3370H: Cyberethics.
+                        <br>- Commented upon students' work as required.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience-card" onclick="this.classList.toggle('active')">
+                <div class="experience-header"><h3>Undergraduate Researcher</h3><span class="chevron">▼</span></div>
+                <div class="experience-content">
+                    <p>Focus: Hate-Speech Detection Using Machine Learning Models.
+                        <br><br>Supervisor: Dr. Wenying Feng
+                        <br><br>- Conducted research on recent developments in hate-speech detection (HSD) with emphasis on AI methods and models.
+                        <br>- Compiled, analyzed and summarized my findings from related publications in the field.
+                        <br>- Assisted in writing a literature review for a survey paper.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience-card" onclick="this.classList.toggle('active')">
+                <div class="experience-header"><h3>Research Assistant - Data Analysis</h3><span class="chevron">▼</span></div>
+                <div class="experience-content">
+                    <p>Focus: Harnessing Humour to Combat Anti-Vaccine Misinformation.
+                        <br><br>Principal Investigators: Dr. Andrew Alexander Monti and Dr. Bilal Momani
+                        <br><br>- Conducted data analysis on social media data (YouTube, Meta, Reddit, etc.) and securing access to platform APIs.
+                        <br>- Maintained ethical data integrity, employed ethical data collection.
+                        <br>- Performed pre-processing and sentiment analysis of the data.
+                        <br>- Assisted with categorization development, data classification, and logistic regression.
+                        <br>- Kept the research team updated on a weekly basis with progress and findings.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience-card" onclick="this.classList.toggle('active')">
+                <div class="experience-header"><h3>Crew Member - McDonald's</h3><span class="chevron">▼</span></div>
+                <div class="experience-content">
+                    <p>- Delivered high-quality customer service in a fast-paced environment with attention to detail.
+                        <br>- Worked with a diverse team to accomplish tasks and meet operational goals.
+                        <br>- Developed better time management and multitasking skills by handling multiple tasks simultaneously.
+                        <br>- Resolved hundreds of customer issues and complaints through regular interaction, ensuring better customer service.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience-card" onclick="this.classList.toggle('active')">
+                <div class="experience-header"><h3>Undergraduate Researcher</h3><span class="chevron">▼</span></div>
+                <div class="experience-content">
+                    <p>Focus: Using Machine Learning Prediction Models to Improve Financial Wealth and Literacy.
+                        <br><br>Supervisor: Dr. Wenying Feng
+                        <br><br>- Developed and compared ARIMA, LSTM and hybrid forecasting models on Canadian financial datasets.
+                        <br>- Performed data preprocessing, feature engineering and model evaluation (precision, recall, F1, and MSE metrics).
+                        <br>- Co-authored a research paper detailing methodology, results, and recommendations for improving financial decision-making.
+                        <br>- Presented the finished research paper at the SNPD2025-Summer IV International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience-card" onclick="this.classList.toggle('active')">
+                <div class="experience-header"><h3>Crew Member - Tim Hortons</h3><span class="chevron">▼</span></div>
+                <div class="experience-content">
+                    <p>- Provided fast-paced customer service in a high-volume quick-service restaurant environment.
+                        <br>- Took and prepared customer orders accurately while maintaining speed and efficiency during peak hours.
+                        <br>- Operated point-of-sale (POS) systems, handled cash and debit/credit transactions, and balanced tills at shift end.
+                        <br>- Prepared food and beverage items according to company standards while ensuring consistency, quality, and presentation.
+                        <br>- Maintained cleanliness of workstations, dining areas, and equipment in compliance with food safety and health regulations.
+                        <br>- Collaborated with team members to ensure smooth workflow, manage rush periods, and deliver a positive customer experience.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+        <section id="projects" class="fade-in">
+
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Hover your mouse over a project below to view the code and details.</p>
+
+            <div class="projects-grid">
+
+                <div class="projects-card">
+                    <img src="assets/projects/amn-logo.jpg" alt="AMN Logo">
+                    <div class="projects-overlay">
+                        <h3>AMN Group Company Website</h3>
+                        <a href="https://amn-group-demo.vercel.app/" target="_blank" class="project-btn">
+                            Demo
+                        </a>
+                        <a href="https://github.com/mariam-merza/amn-group-demo" target="_blank" class="project-btn">
+                            Code
+                        </a>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+
+                <div class="projects-card">
+                    <img src="assets/projects/financial-ai.png" alt="Financial AI">
+                    <div class="projects-overlay">
+                        <h3>Financial AI Prediction and Recommendation System</h3>
+                        <a href="https://ieeexplore.ieee.org/document/11253447"
+                        target="_blank"
+                        class="project-btn">
+                            Publication
+                        </a>
+                        <p>Python, pandas, scikit-learn, TensorFlow/Keras, time-series analysis</p>
+                    </div>
+                </div>
+
+                <div class="projects-card">
+                    <img src="assets/projects/task-manager.png" alt="Task Manager">
+                    <div class="projects-overlay">
+                        <h3>Task Manager</h3>
+                        <a href="https://task-manager-gilt-one-72.vercel.app/" target="_blank" class="project-btn">
+                            App
+                        </a>
+                        <a href="https://github.com/mariam-merza/task-manager" target="_blank" class="project-btn">
+                            Code
+                        </a>
+                        <p>React, Node.js, Typescript, Express, MongoDB, JWT</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    <div id="contact" class="fade-in">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Get in touch with me below.</p>
+
+    <div class="contact-info">
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=marymerza4@gmail.com" target="_blank" aria-label="Email" class="contact-button">
+
+                    <svg class="email-icon2"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 16 16">
+
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-.5a.5.5 0 0 0-.5.5v.217l6.5 3.9 6.5-3.9V4a.5.5 0 0 0-.5-.5H2zm12.5 1.383-4.708 2.825 4.708 3.925V4.883zm-.034 7.434-5.982-4.985L8 7.583l-.484-.251-5.982 4.985A.5.5 0 0 0 2 12.5h12a.5.5 0 0 0 .466-.183zM1.5 11.633l4.708-3.925L1.5 4.883v6.75z"/>
+
+                    </svg>marymerza4@gmail.com
+            </a>
+
+        </div>
+
+        <div class="form">
+        <form id="contact-form">
+
+            <input type="hidden" name="_subject" value="New Contact Form Submission">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="#contact">
+
+            <input type="text" name="name" id="name" placeholder="Name*" required minlength="2">
+
+            <input type="tel" name="phone" id="phone" placeholder="Phone Number*" required
+                pattern="^\+?[0-9\s\-()]{7,15}$">
+
+            <input type="email" name="email" id="email" placeholder="Email*" required>
+
+            <textarea name="message" id="message" placeholder="Message*" required></textarea>
+
+            <button type="submit" id="contact-button">Submit</button>
+
+        </form>
+        <div id="form-success" class="form-success" style="display:none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+            <p>Your message has been sent!</p>
+            <p class="form-success-sub">I'll get back to you as soon as possible.</p>
+        </div>
+        </div>
+
+    <footer>
+    <div class="footer-top">
+        <div class="social-links">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=marymerza4@gmail.com" target="_blank" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="social-icon">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 
+                    0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v.01L12 
+                    13l8-6.99V6H4zm16 12V8l-8 7-8-7v10h16z"/>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/marymerza/" target="_blank" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="social-icon">
+                    <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 
+                    21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 
+                    3H19M8.34 17V10.66H6.26V17H8.34M7.3 
+                    9.73A1.2 1.2 0 1 0 7.3 7.33A1.2 1.2 0 0 0 
+                    7.3 9.73M17.74 17V13.5C17.74 11.63 16.74 
+                    10.56 15.16 10.56C13.97 10.56 13.44 
+                    11.21 13.14 11.67V10.66H11.06C11.09 
+                    11.33 11.06 17 11.06 17H13.14V13.46C13.14 
+                    13.27 13.15 13.08 13.21 12.94C13.36 
+                    12.56 13.7 12.16 14.29 12.16C15.06 12.16 
+                    15.37 12.75 15.37 13.61V17H17.74Z"/>
+                </svg>
+            </a>
+            <a href="https://github.com/mariam-merza" target="_blank" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="social-icon">
+                    <path d="M12 2A10 10 0 0 0 2 12C2 16.42 4.87 
+                    20.17 8.84 21.5C9.34 21.58 9.5 21.27 
+                    9.5 21V19.31C6.73 19.91 6.14 17.97 
+                    6.14 17.97C5.68 16.81 5.03 16.5 
+                    5.03 16.5C4.12 15.88 5.1 15.9 
+                    5.1 15.9C6.1 15.97 6.63 16.93 
+                    6.63 16.93C7.5 18.45 8.97 18 
+                    9.54 17.76C9.63 17.11 9.89 16.67 
+                    10.17 16.42C7.95 16.17 5.62 15.31 
+                    5.62 11.5C5.62 10.39 6 9.5 
+                    6.65 8.8C6.55 8.55 6.2 7.5 
+                    6.75 6.15C6.75 6.15 7.59 5.88 
+                    9.5 7.09C10.29 6.86 11.15 6.75 
+                    12 6.75C12.85 6.75 13.71 6.86 
+                    14.5 7.09C16.41 5.88 17.25 6.15 
+                    17.25 6.15C17.8 7.5 17.45 8.55 
+                    17.35 8.8C18 9.5 18.38 10.39 
+                    18.38 11.5C18.38 15.32 16.04 16.16 
+                    13.81 16.41C14.17 16.72 14.5 17.33 
+                    14.5 18.25V21C14.5 21.27 14.66 21.59 
+                    15.17 21.5C19.14 20.17 22 16.42 
+                    22 12A10 10 0 0 0 12 2Z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span class="copyright">
+            &copy; Copyright 2026 - Mariam Merza
+        </span>
+    </div>
+
+</footer>
+
+</body>
+</html>
