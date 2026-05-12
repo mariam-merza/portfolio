@@ -7,6 +7,10 @@
   --box-shadow-color: #241a1c;
   --hover-color: #50363a;
 }
+:root {
+  --section-spacing-desktop: 120px;
+  --section-spacing-mobile: 120px;
+}
 .fade-in {
   opacity: 0;
   transition: opacity 1.2s cubic-bezier(0.25, 0.1, 0.25, 1),
@@ -45,41 +49,33 @@ body::before {
     radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.95), transparent),
     radial-gradient(1px 1px at 80px 120px, rgba(255,255,255,0.7), transparent),
     radial-gradient(2px 2px at 160px 220px, rgba(255,255,255,0.9), transparent),
-
     radial-gradient(1.5px 1.5px at 240px 420px, rgba(255,255,255,0.85), transparent),
     radial-gradient(2px 2px at 320px 580px, rgba(255,255,255,0.95), transparent),
     radial-gradient(1px 1px at 420px 690px, rgba(255,255,255,0.7), transparent),
-
     radial-gradient(2px 2px at 520px 750px, rgba(255,255,255,0.9), transparent),
     radial-gradient(1px 1px at 620px 540px, rgba(255,255,255,0.75), transparent),
     radial-gradient(2px 2px at 720px 660px, rgba(255,255,255,0.95), transparent),
-
     radial-gradient(1.5px 1.5px at 820px 400px, rgba(255,255,255,0.8), transparent),
     radial-gradient(2px 2px at 920px 720px, rgba(255,255,255,0.9), transparent),
     radial-gradient(1px 1px at 1020px 500px, rgba(255,255,255,0.7), transparent),
-
     radial-gradient(2px 2px at 1120px 620px, rgba(255,255,255,0.95), transparent),
     radial-gradient(1.5px 1.5px at 1220px 350px, rgba(255,255,255,0.8), transparent),
     radial-gradient(2px 2px at 1320px 780px, rgba(255,255,255,0.9), transparent),
-
     radial-gradient(1px 1px at 140px 760px, rgba(255,255,255,0.75), transparent),
     radial-gradient(2px 2px at 260px 90px, rgba(255,255,255,0.95), transparent),
     radial-gradient(1.5px 1.5px at 360px 310px, rgba(255,255,255,0.8), transparent),
     radial-gradient(2px 2px at 460px 470px, rgba(255,255,255,0.9), transparent),
     radial-gradient(1px 1px at 560px 120px, rgba(255,255,255,0.7), transparent),
-
     radial-gradient(2px 2px at 660px 280px, rgba(255,255,255,0.95), transparent),
     radial-gradient(1px 1px at 760px 730px, rgba(255,255,255,0.75), transparent),
     radial-gradient(2px 2px at 860px 560px, rgba(255,255,255,0.9), transparent),
     radial-gradient(1.5px 1.5px at 960px 140px, rgba(255,255,255,0.85), transparent),
     radial-gradient(2px 2px at 1060px 760px, rgba(255,255,255,0.95), transparent),
-
     radial-gradient(1px 1px at 1160px 430px, rgba(255,255,255,0.7), transparent),
     radial-gradient(2px 2px at 1260px 210px, rgba(255,255,255,0.9), transparent),
     radial-gradient(1px 1px at 1360px 620px, rgba(255,255,255,0.75), transparent),
     radial-gradient(2px 2px at 1460px 480px, rgba(255,255,255,0.95), transparent),
     radial-gradient(1.5px 1.5px at 1560px 120px, rgba(255,255,255,0.8), transparent),
-
     radial-gradient(2px 2px at 180px 510px, rgba(255,255,255,0.9), transparent),
     radial-gradient(1px 1px at 380px 670px, rgba(255,255,255,0.7), transparent),
     radial-gradient(2px 2px at 580px 390px, rgba(255,255,255,0.95), transparent),
@@ -96,41 +92,33 @@ body::after {
     radial-gradient(2px 2px at 40px 60px, rgba(255,255,255,0.95), transparent),
     radial-gradient(1px 1px at 120px 180px, rgba(255,255,255,0.7), transparent),
     radial-gradient(2px 2px at 240px 260px, rgba(255,255,255,0.9), transparent),
-
     radial-gradient(1.5px 1.5px at 340px 500px, rgba(255,255,255,0.85), transparent),
     radial-gradient(2px 2px at 440px 640px, rgba(255,255,255,0.95), transparent),
     radial-gradient(1px 1px at 540px 740px, rgba(255,255,255,0.7), transparent),
-
     radial-gradient(2px 2px at 640px 680px, rgba(255,255,255,0.9), transparent),
     radial-gradient(1px 1px at 740px 420px, rgba(255,255,255,0.75), transparent),
     radial-gradient(2px 2px at 840px 540px, rgba(255,255,255,0.95), transparent),
-
     radial-gradient(1.5px 1.5px at 940px 260px, rgba(255,255,255,0.8), transparent),
     radial-gradient(2px 2px at 1040px 760px, rgba(255,255,255,0.9), transparent),
     radial-gradient(1px 1px at 1140px 360px, rgba(255,255,255,0.7), transparent),
-
     radial-gradient(2px 2px at 1240px 620px, rgba(255,255,255,0.95), transparent),
     radial-gradient(1.5px 1.5px at 1340px 300px, rgba(255,255,255,0.8), transparent),
     radial-gradient(2px 2px at 1440px 720px, rgba(255,255,255,0.9), transparent),
-
     radial-gradient(1px 1px at 90px 700px, rgba(255,255,255,0.75), transparent),
     radial-gradient(2px 2px at 190px 90px, rgba(255,255,255,0.95), transparent),
     radial-gradient(1.5px 1.5px at 290px 370px, rgba(255,255,255,0.8), transparent),
     radial-gradient(2px 2px at 390px 590px, rgba(255,255,255,0.9), transparent),
     radial-gradient(1px 1px at 490px 160px, rgba(255,255,255,0.7), transparent),
-
     radial-gradient(2px 2px at 590px 300px, rgba(255,255,255,0.95), transparent),
     radial-gradient(1px 1px at 690px 760px, rgba(255,255,255,0.75), transparent),
     radial-gradient(2px 2px at 790px 510px, rgba(255,255,255,0.9), transparent),
     radial-gradient(1.5px 1.5px at 890px 130px, rgba(255,255,255,0.85), transparent),
     radial-gradient(2px 2px at 990px 700px, rgba(255,255,255,0.95), transparent),
-
     radial-gradient(1px 1px at 1090px 430px, rgba(255,255,255,0.7), transparent),
     radial-gradient(2px 2px at 1190px 220px, rgba(255,255,255,0.9), transparent),
     radial-gradient(1px 1px at 1290px 640px, rgba(255,255,255,0.75), transparent),
     radial-gradient(2px 2px at 1390px 470px, rgba(255,255,255,0.95), transparent),
     radial-gradient(1.5px 1.5px at 1490px 180px, rgba(255,255,255,0.8), transparent),
-
     radial-gradient(2px 2px at 170px 530px, rgba(255,255,255,0.9), transparent),
     radial-gradient(1px 1px at 370px 670px, rgba(255,255,255,0.7), transparent),
     radial-gradient(2px 2px at 570px 390px, rgba(255,255,255,0.95), transparent),
@@ -175,6 +163,14 @@ body > * {
   }
   to {
     transform: translateY(300px);
+  }
+}
+@media (max-width: 768px) {
+  body::before,
+  body::after,
+  html::before {
+    animation-duration: 120s;
+    opacity: 0.45;
   }
 }
 html {
@@ -261,10 +257,13 @@ html {
   font-size: 16px;
   transition: background-color 0.3s, transform 0.3s;
 }
-.nav-links a:hover {
-  text-decoration: none;
-  color: var(--accent-color);
-  transition: color 0.3s, transform 0.3s;
+@media (hover: hover) and (pointer: fine) {
+  .nav-links a:hover {
+    color: var(--accent-color);
+  }
+}
+.nav-links a:active {
+  opacity: 0.7;
 }
 .nav-links li {
   margin-right: clamp(10px, 2vw, 15px);
@@ -320,8 +319,13 @@ html {
   text-decoration: none;
   color: var(--secondary-color);
 }
-.mobile-menu a:hover {
-  color: var(--accent-color);
+@media (hover: hover) and (pointer: fine) {
+  .mobile-menu a:hover {
+    color: var(--accent-color);
+  }
+}
+.mobile-menu a:active {
+  opacity: 0.7;
 }
 .menu-section {
   font-weight: 600;
@@ -340,8 +344,13 @@ html {
   font-weight: 500;
   word-break: break-word;
 }
-.email a:hover {
-  color: var(--accent-color);
+@media (hover: hover) and (pointer: fine) {
+  .email a:hover {
+    color: var(--accent-color);
+  }
+}
+.email a:active {
+  opacity: 0.7;
 }
 .email-icon {
   width: 18px;
@@ -366,7 +375,7 @@ body.menu-open {
 }
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -460,20 +469,33 @@ body.menu-open {
     0 0 10px rgba(198,155,160,0.25),
     0 0 25px rgba(138,92,97,0.18);
 }
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow:
-    0 0 18px rgba(198,155,160,0.35),
-    0 0 35px rgba(138,92,97,0.25);
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow:
+      0 0 18px rgba(198,155,160,0.35),
+      0 0 35px rgba(138,92,97,0.25);
+  }
+}
+.btn-primary:active {
+  transform: scale(0.97);
 }
 .btn svg {
   margin-right: 6px;
   vertical-align: middle;
 }
 section {
-  padding: 100px 20px;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding-inline: 20px;
+  padding-block: var(--section-spacing-desktop);
+}
+@media (max-width: 768px) {
+  section {
+    padding-block: var(--section-spacing-mobile);
+    padding-inline: 20px;
+  }
 }
 .section-title {
   font-family: serif;
@@ -507,9 +529,14 @@ section {
   box-sizing: border-box;
   overflow: hidden;
 }
-.experience-card:hover {
-  border-color: var(--secondary-color);
-  transform: translateY(-5px);
+@media (hover: hover) and (pointer: fine) {
+  .experience-card:hover {
+    border-color: var(--secondary-color);
+    transform: translateY(-5px);
+  }
+}
+.experience-card:active {
+  transform: scale(0.99);
 }
 .experience-header {
   display: flex;
@@ -589,7 +616,7 @@ section {
     translate(-50%, -50%)
     rotate(-15deg);
   border-radius: 50%;
-  border: 1px solid rgba(255,210,225,0.85),;
+  border: 1px solid rgba(255,210,225,0.85);
   box-shadow:
     0 0 2px rgba(255,160,200,0.55);
   opacity: 0.4;
@@ -796,10 +823,9 @@ section {
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-content: center;
   gap: 25px;
-  margin-top: 60px;
 }
 .projects-card {
   position: relative;
@@ -834,17 +860,21 @@ section {
   text-align: center;
   padding: 20px;
 }
-.projects-card:hover {
-  transform: translateY(-8px);
-  background-color: var(--secondary-color);
+@media (hover: hover) and (pointer: fine) {
+  .projects-card:hover {
+    transform: translateY(-8px);
+    background-color: var(--secondary-color);
+  }
+  .projects-card:hover img {
+    transform: scale(1.06);
+    filter: brightness(0.7);
+  }
+  .projects-card:hover .projects-overlay {
+    opacity: 1;
+  }
 }
-.projects-card:hover img {
-  transform: scale(1.06);
-  filter: brightness(0.7);
-  background-color: var(--secondary-color);
-}
-.projects-card:hover .projects-overlay {
-  opacity: 1;
+.projects-card:active {
+  transform: scale(0.98);
 }
 .projects-overlay h3 {
   font-family: serif;
@@ -871,9 +901,14 @@ section {
   font-weight: 700;
   transition: transform 0.25s ease, background 0.25s ease;
 }
-.project-btn:hover {
-  background: var(--text-color);
-  transform: scale(1.05);
+@media (hover: hover) and (pointer: fine) {
+  .project-btn:hover {
+    background: var(--text-color);
+    transform: scale(1.05);
+  }
+}
+.project-btn:active {
+  transform: scale(0.96);
 }
 @media (max-width: 768px) {
   .projects-grid {
@@ -920,11 +955,13 @@ section {
     0 0 10px rgba(198,155,160,0.25),
     0 0 25px rgba(138,92,97,0.18);
 }
-#contact-button:hover {
-  transform: translateY(-3px);
-  box-shadow:
-    0 0 18px rgba(198,155,160,0.35),
-    0 0 35px rgba(138,92,97,0.25);
+@media (hover: hover) and (pointer: fine) {
+  #contact-button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+      0 0 18px rgba(198,155,160,0.35),
+      0 0 35px rgba(138,92,97,0.25);
+  }
 }
 #contact-button:active {
   transform: translateY(0);
@@ -955,11 +992,13 @@ section {
     0 0 10px rgba(198,155,160,0.25),
     0 0 25px rgba(138,92,97,0.18);
 }
-.contact-button:hover {
-  transform: translateY(-3px);
-  box-shadow:
-    0 0 18px rgba(198,155,160,0.35),
-    0 0 35px rgba(138,92,97,0.25);
+@media (hover: hover) and (pointer: fine) {
+  .contact-button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+      0 0 18px rgba(198,155,160,0.35),
+      0 0 35px rgba(138,92,97,0.25);
+  }
 }
 .contact-button:active {
   transform: translateY(0);
@@ -1027,8 +1066,13 @@ section {
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
 }
-#contact-form input[type=submit]:hover {
-  background-color: var(--hover-color);
+@media (hover: hover) and (pointer: fine) {
+  #contact-form input[type=submit]:hover {
+    background-color: var(--hover-color);
+  }
+}
+#contact-form input[type=submit]:active {
+  transform: scale(0.98);
 }
 #subject {
   width: 100%;
@@ -1102,7 +1146,7 @@ section {
     margin-bottom: 10px;
   }
 }
-/* Fix Chrome / Safari autofill background */
+/* fix chrome / safari autofill background */
 #contact-form input:-webkit-autofill, #contact-form input:-webkit-autofill:hover, #contact-form input:-webkit-autofill:focus, #contact-form textarea:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px var(--background-color) inset !important;
   -webkit-text-fill-color: var(--text-color) !important;
@@ -1125,7 +1169,6 @@ footer {
   z-index: 2;
 }
 .footer-top {
-  padding: 80px 0 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1143,9 +1186,6 @@ footer {
   text-decoration: none;
   transition: transform 0.3s ease;
 }
-.social-links a:hover {
-  transform: translateY(-6px) scale(1.08);
-}
 .social-icon {
   width: 64px;
   height: 64px;
@@ -1155,11 +1195,23 @@ footer {
     filter 0.3s ease,
     transform 0.3s ease;
 }
-.social-links a:hover .social-icon {
-  fill: var(--secondary-color);
+@media (hover: hover) and (pointer: fine) {
+  .social-links a:hover {
+    transform: translateY(-6px) scale(1.08);
+  }
+  .social-links a:hover .social-icon {
+    fill: var(--secondary-color);
+    filter:
+      drop-shadow(0 0 10px var(--accent-color))
+      drop-shadow(0 0 24px var(--accent-color));
+  }
+}
+.social-links a:active {
+  transform: scale(0.96);
+}
+.social-links a:active .social-icon {
   filter:
-    drop-shadow(0 0 10px var(--accent-color))
-    drop-shadow(0 0 24px var(--accent-color));
+    drop-shadow(0 0 8px var(--accent-color));
 }
 .footer-bottom {
   background: var(--background-color);
@@ -1204,11 +1256,20 @@ footer a {
     0 0 25px rgba(138,92,97,0.18);
   z-index: 1000;
 }
-.back-to-top:hover {
-  transform: translateY(-3px);
-  box-shadow:
-    0 0 18px rgba(198,155,160,0.35),
-    0 0 35px rgba(138,92,97,0.25);
+@media (hover: hover) and (pointer: fine) {
+
+  .back-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow:
+      0 0 18px rgba(198,155,160,0.35),
+      0 0 35px rgba(138,92,97,0.25);
+  }
+  .back-to-top:hover::before {
+    opacity: 1;
+  }
+}
+.back-to-top:active {
+  transform: scale(0.96);
 }
 .back-to-top::before {
   content: "";
@@ -1221,9 +1282,6 @@ footer a {
   z-index: -1;
   transition: opacity 0.3s ease;
 }
-.back-to-top:hover::before {
-  opacity: 1;
-}
 /* global safety rule to catch overflow bugs */
 * {
   box-sizing: border-box;
@@ -1231,7 +1289,7 @@ footer a {
 html, body {
   overflow-x: hidden;
 }
-/* ── Contact form field states ── */
+/* ── contact form field states ── */
 #contact-form input.field-invalid,
 #contact-form textarea.field-invalid {
   border-color: var(--secondary-color);
@@ -1276,4 +1334,102 @@ html, body {
 @keyframes formFadeUp {
   from { opacity: 0; transform: translateY(14px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 90vh;
+    padding: 100px 20px 60px;
+  }
+  .hero-content {
+    width: 100%;
+  }
+  .hero-content h1 {
+    font-size: clamp(2.8rem, 14vw, 5rem);
+    line-height: 1.1;
+  }
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+  .typewriter {
+    white-space: normal;
+    overflow: visible;
+    border-right: none;
+    animation: none;
+    display: block;
+    width: 100%;
+  }
+  .about-visual {
+    width: 100%;
+    max-width: 320px;
+    height: 260px;
+    margin: 30px auto 0;
+  }
+  .orbit-glow {
+    width: 240px;
+    height: 240px;
+  }
+  .planet-ring {
+    width: 250px;
+    height: 95px;
+  }
+  .image-ring {
+    width: 180px;
+    height: 180px;
+  }
+  .b1 {
+    width: 70px;
+    top: 10px;
+    left: 0;
+  }
+  .b2 {
+    width: 58px;
+    top: 150px;
+    left: -5px;
+  }
+  .b3 {
+    width: 50px;
+    top: 70px;
+    right: 5px;
+  }
+  .b4 {
+    width: 80px;
+    top: 155px;
+    right: 0;
+  }
+  .projects-card {
+    position: relative;
+    overflow: hidden;
+  }
+  .projects-card:hover {
+    transform: none;
+  }
+  .projects-card:hover img {
+    transform: none;
+    filter: none;
+  }
+  .projects-card.active img {
+    transform: scale(1.06);
+    filter: brightness(0.4);
+  }
+  .projects-card.active .projects-overlay {
+    opacity: 1;
+  }
+  .projects-overlay {
+    transition: opacity 0.3s ease;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  .social-links a:hover {
+    transform: none;
+  }
+  .social-links a:hover .social-icon {
+    fill: var(--secondary-color);
+    filter: none;
+    transform: none;
+  }
 }

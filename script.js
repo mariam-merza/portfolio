@@ -63,6 +63,21 @@ function togglePROJECTS(header) {
     }
 }
 
+const projectCards = document.querySelectorAll(".projects-card");
+
+projectCards.forEach(card => {
+  card.addEventListener("click", () => {
+
+    projectCards.forEach(c => {
+      if (c !== card) {
+        c.classList.remove("active");
+      }
+    });
+
+    card.classList.toggle("active");
+  });
+});
+
 const form = document.getElementById("contact-form");
 
 const fields = ["name", "email", "phone", "message"];
